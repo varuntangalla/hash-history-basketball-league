@@ -45,3 +45,4 @@ export default function Sidebar ({title, list, loading, location, match}) {
           </ul>
         </div>
 }
+
