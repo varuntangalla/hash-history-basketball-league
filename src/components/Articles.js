@@ -1,49 +1,42 @@
-import React, { Component } from 'react' 
+import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
-import Sidebar from './Sidebar' 
-import { getTeamsArticles } from '../api'
+import Sidebar from './Sidebar'
 import Article from './Article'
+import { getTeamsArticles } from '../api'
+import Loading from './Loading'
 
-export default class Articles extends Component{
+export default class Articles extends Component {
+  state = {
+    teamsArticles: [],
+    loading: true,
+  }
+  componentDidMount() {
+    getTeamsArticles(this.props.match.params.teamId)
+      .then((teamsArticles) => {
+        this.setState(() => ({
+          loading: false,
+          teamsArticles: teamsArticles.map((article) => article.title),
+        }))
+      })
+  }
+  render() {
+    const { loading, teamsArticles } = this.state
+    const { params, url } = this.props.match
+    const  { teamId } = params
 
-    state = {
-        loading: true, 
-        teamArticles: [],
-    }
+    return loading === true
+      ? <Loading />
+      : <div className='container two-column'>
+          <Sidebar
+            loading={loading}
+            title='Articles'
+            list={teamsArticles}
+            {...this.props}
+          />
 
-    componentDidMount(){
-        getTeamsArticles(this.props.match.params.teamId)
-            .then((teamsArticles)=> {
-                this.setState(() => ({
-
-                    loading: false,
-                    teamsArticles: teamsArticles.map((articles) => articles.title)
-
-                }))
-            })
-
-    }
-
-    render() {
-
-        const { loading, teamsArticles } = this.state
-
-        const { params, url } = this.props.match
-
-        const { teamId, articleId } = params
-        
-        return loading === true 
-                ? <h1>LOADING</h1>
-                : <div className='container two-column'> 
-                    <Sidebar
-                        loading={loading} 
-                        title='Articles'
-                        list={teamsArticles}
-                        {...this.props}
-                        />
-                <Route path={`${url}/:articleId`} render={({ match }) => (
-            <Article articleId={articleId} teamId={teamId}>
-              {(article) => !article ? <h1>Loading</h1> : (
+          <Route path={`${url}/:articleId`} render={({ match }) => (
+            <Article articleId={match.params.articleId} teamId={teamId}>
+              {(article) => !article ? <Loading /> : (
                 <div className='panel'>
                   <article className='article' key={article.id}>
                     <h1 className='header'>{article.title}</h1>
@@ -54,7 +47,5 @@ export default class Articles extends Component{
             </Article>
           )}/>
         </div>
-
-    }
-
+  }
 }
