@@ -1,0 +1,41 @@
+{
+  "files": {
+    "static/js/0.3c2fdb0b.chunk.js": "/hash-history-basketball-league/static/js/0.3c2fdb0b.chunk.js",
+    "static/js/0.3c2fdb0b.chunk.js.map": "/hash-history-basketball-league/static/js/0.3c2fdb0b.chunk.js.map",
+    "static/js/1.790f4161.chunk.js": "/hash-history-basketball-league/static/js/1.790f4161.chunk.js",
+    "static/js/1.790f4161.chunk.js.map": "/hash-history-basketball-league/static/js/1.790f4161.chunk.js.map",
+    "static/js/2.5290db64.chunk.js": "/hash-history-basketball-league/static/js/2.5290db64.chunk.js",
+    "static/js/2.5290db64.chunk.js.map": "/hash-history-basketball-league/static/js/2.5290db64.chunk.js.map",
+    "main.css": "/hash-history-basketball-league/static/css/main.35d2342b.chunk.css",
+    "main.js": "/hash-history-basketball-league/static/js/main.2fb7474c.chunk.js",
+    "main.js.map": "/hash-history-basketball-league/static/js/main.2fb7474c.chunk.js.map",
+    "runtime-main.js": "/hash-history-basketball-league/static/js/runtime-main.eaa1eac1.js",
+    "runtime-main.js.map": "/hash-history-basketball-league/static/js/runtime-main.eaa1eac1.js.map",
+    "static/js/5.be55b10e.chunk.js": "/hash-history-basketball-league/static/js/5.be55b10e.chunk.js",
+    "static/js/5.be55b10e.chunk.js.map": "/hash-history-basketball-league/static/js/5.be55b10e.chunk.js.map",
+    "static/js/6.77fabafa.chunk.js": "/hash-history-basketball-league/static/js/6.77fabafa.chunk.js",
+    "static/js/6.77fabafa.chunk.js.map": "/hash-history-basketball-league/static/js/6.77fabafa.chunk.js.map",
+    "static/js/7.b7065c57.chunk.js": "/hash-history-basketball-league/static/js/7.b7065c57.chunk.js",
+    "static/js/7.b7065c57.chunk.js.map": "/hash-history-basketball-league/static/js/7.b7065c57.chunk.js.map",
+    "static/js/8.86588682.chunk.js": "/hash-history-basketball-league/static/js/8.86588682.chunk.js",
+    "static/js/8.86588682.chunk.js.map": "/hash-history-basketball-league/static/js/8.86588682.chunk.js.map",
+    "static/js/9.1ac36c9a.chunk.js": "/hash-history-basketball-league/static/js/9.1ac36c9a.chunk.js",
+    "static/js/9.1ac36c9a.chunk.js.map": "/hash-history-basketball-league/static/js/9.1ac36c9a.chunk.js.map",
+    "static/js/10.edb1c711.chunk.js": "/hash-history-basketball-league/static/js/10.edb1c711.chunk.js",
+    "static/js/10.edb1c711.chunk.js.map": "/hash-history-basketball-league/static/js/10.edb1c711.chunk.js.map",
+    "static/js/11.067f0a4a.chunk.js": "/hash-history-basketball-league/static/js/11.067f0a4a.chunk.js",
+    "static/js/11.067f0a4a.chunk.js.map": "/hash-history-basketball-league/static/js/11.067f0a4a.chunk.js.map",
+    "index.html": "/hash-history-basketball-league/index.html",
+    "precache-manifest.cb646f9678d2cca8e4f198a008e67dce.js": "/hash-history-basketball-league/precache-manifest.cb646f9678d2cca8e4f198a008e67dce.js",
+    "service-worker.js": "/hash-history-basketball-league/service-worker.js",
+    "static/css/main.35d2342b.chunk.css.map": "/hash-history-basketball-league/static/css/main.35d2342b.chunk.css.map",
+    "static/js/0.3c2fdb0b.chunk.js.LICENSE.txt": "/hash-history-basketball-league/static/js/0.3c2fdb0b.chunk.js.LICENSE.txt",
+    "static/js/5.be55b10e.chunk.js.LICENSE.txt": "/hash-history-basketball-league/static/js/5.be55b10e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eaa1eac1.js",
+    "static/js/5.be55b10e.chunk.js",
+    "static/css/main.35d2342b.chunk.css",
+    "static/js/main.2fb7474c.chunk.js"
+  ]
+}
