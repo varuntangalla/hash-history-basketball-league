@@ -14,7 +14,9 @@ import Navbar from './Navbar'
 
 //import Articles from './Articles'
 
-import Loading from './Loading'
+import Loading from './Loading' 
+
+//gitThe project has completed 
 
 import DynamicImport from './DynamicImport'
 
