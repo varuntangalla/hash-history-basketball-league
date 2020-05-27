@@ -17,6 +17,7 @@ import Navbar from './Navbar'
 import Loading from './Loading' 
 
 //gitThe project has completed 
+//checking whether commits are getting recorded or not 
 
 import DynamicImport from './DynamicImport'
 
