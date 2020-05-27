@@ -5,6 +5,11 @@ import { getPlayers } from '../api'
 import { parse } from 'query-string'
 import slug from 'slug'
 
+import { 
+  TransitionGroup,
+  CSSTransition, 
+} from 'react-transition-group'
+
 export default class Players extends Component {
   state = {
     players: [],
@@ -48,7 +53,9 @@ export default class Players extends Component {
           } = players.find((player) => slug(player.name) === match.params.playerId)
 
           return (
-            <div className='panel'>
+            <TransitionGroup className='panel'>
+              <CSSTransition key={location.key} timeout={250} classNames='fade'>
+              <div className='panel'>
               <img className='avatar' src={`${avatar}`} alt={`${name}'s avatar`} />
               <h1 className='medium-header'>{name}</h1>
               <h3 className='header'>#{number}</h3>
@@ -71,6 +78,11 @@ export default class Players extends Component {
                 </ul>
               </div>
             </div>
+              </CSSTransition>
+
+
+            </TransitionGroup>
+            
           )
         }} />
       </div>
